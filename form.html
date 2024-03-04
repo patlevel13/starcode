@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Code</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@700&family=Sarala&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fdcd3dea3e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+    <!-- Banner inserer video presentation avec texte-------- -->
+
+    <div class="block-banner">
+        <img class="banner-image" src="src/images2/Astroport.png" alt="horizon">
+    </div>
+
+
+
+    <!-- -------------navbar ou autre- +meteo ou autres--- -->
+
+    <header>
+        <div class="block" id="navbar">
+            <nav class="level is-mobile ">
+
+                <p class="level-item has-text-centered">
+                    <a class="link is-info " href="index.html">Home</a>
+                </p>
+
+                <p class="level-item has-text-centered">
+                    <a class="link is-info" href="form.html">Reservations</a>
+                </p>
+                <p class="level-item has-text-centered">
+                    <a class="link is-info" href="contact.html">Contact</a>
+                </p>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- ----------formulaire inscriptions -->
+
+    <div class="container my-5">
+        <form id="signup" class="form w-100" name='formValidate'>
+            <h1>Formulaire de Réservations</h1>
+            <h2>Vos Coordonnées :</h2>
+            <div class="form-field">
+                <label for="name">Nom:</label>
+                <input type="text" name="name" id="name" autocomplete="off">
+                <small></small>
+            </div>
+            <div class="form-field">
+                <label for="firstname">Prénom: </label>
+                <input type="text" name="firstname" id="firstname" autocomplete="off">
+                <small></small>
+            </div>
+            <div class="form-field">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" autocomplete="off">
+                <small></small>
+            </div>
+
+
+            <h2>Votre Voyage :</h2>
+
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <h3>Type de voyage :</h3>
+                    <label class="label"></label>
+                </div>
+                <div class="field-body is-flex-grow-2">
+                    <div class="field is-narrow">
+                        <div class="control">
+                            <label class="radio">
+                                <input type="radio" name="typeVoyage" value="allerRetour" checked>
+                            </label>
+                            <h4>Aller/Retour</h4>
+                        </div>
+                    </div>
+            
+                    <div class="field is-narrow">
+                        <div class="control">
+                            <label class="radio">
+                                <input type="radio" name="typeVoyage" value="allerSimple">
+                            </label>
+                            <h4>Aller Simple</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="field">
+                <label class="label" for="depart"></label>
+                <h4>Date de départ :</h4>
+                <div class="form-field">
+                    <input class="input" type="date" id="depart" name="depart" required>
+                    <small></small>
+                </div>
+
+
+            </div>
+
+
+            <div class="field">
+                <label class="label" for="retour"></label>
+                <h4>Date de retour :</h4>
+                <div class="form-field">
+                    <input class="input" type="date" id="retour" name="retour" required>
+                    <small></small>
+                </div>
+            </div>
+
+            <!-- --------------test destination----- -->
+
+            <div class="form-field">
+                <label for="destination">Votre Déstination</label>
+                <select class="form-select" id="destination" name="destination">
+                    <option selected disabled value="">Choisir...</option>
+                    <option>Endor</option>
+                    <option>Hoth</option>
+                    <option>Naboo</option>
+                    <option>Tatooine</option>
+                </select>
+                <small></small>
+
+                <!--------------fin destination------- -->
+
+
+                <!-- --------------Test nb de places---------- -->
+
+                <div class="form-field">
+                    <label for="nombre" min>Nombre de places:</label>
+                    <input type="text" name="nombre" id="nombre" min="1" max="10">
+                    <small></small>
+                </div>
+
+                <div><span id="prixTotal"></span></div>
+
+                <!-- ---------------------------------------------------- -->
+                <div class="text-center">
+                    <button class="btn btn-primary mt-3" type="submit">Valider</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+
+    <!-- -------footer -->
+    <footer>
+
+        <div class="content has-text-centered">
+            <div class="footer">
+                <div class="resaux-sociaux" id="resaux-sociaux">
+                    <a href="#" aria-label="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" aria-label="facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="github"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="final">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dignissimos nesciunt deserunt,
+                        dolorum quia reiciendis esse eius perspiciatis et aliquid veniam, velit dolor consequuntur
+                        aspernatur, ullam sed iusto reprehenderit repudiandae. Asperiores, voluptate eum.</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</body>
+
+</html>

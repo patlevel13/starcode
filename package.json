@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "bulma": "^0.9.4",
+    "jspdf": "^2.5.1"
+  }
+}

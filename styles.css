@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(src/images/fond.jpg);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* --navbar--- */
+#navbar {
+    margin-top: -6px;
+    background-color: #a6a7a6;
+    min-height: 4vh;
+    border-top: solid 5px #3e5f70;
+    border-bottom: solid 5px #3e5f70;
+    box-shadow: 2px 2px 35px 2px;
+}
+
+/* -------------- */
+.planetename {
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-left: 10px;
+
+}
+.description {
+    text-align: center;
+    color: #fff;
+    font-size: 0.9rem;
+
+}
+
+/* -----------astroport------- */
+.heading-site {
+    text-align: center;
+    font-family: monospace;
+    color: #fff;
+}
+
+.colored {
+    height: auto;
+    width: 100%;
+    background-color: #5a555550;
+    text-align: start;
+    margin-right: 25px;
+}
+
+/* ----------------------------------- */
+.block-banner {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    position: relative;
+}
+
+
+/* ----------------------------------------- */
+
+/* 
+.imgif{
+    width: 40%;
+    height: auto;
+    border-radius: 40%;
+    position:absolute;
+    z-index: 4;
+} */
+
+/*test*/
+.contact {
+    background-color: transparent;
+    padding: 5% 30%;
+    margin-top: 10px;
+}
+
+.footer {
+    background-color: transparent;
+    border-top: solid 10px #a6a7a6;
+}
+
+.label {
+    color: #fff;
+    font-family: monospace;
+}
+
+/*resaux sociaux*/
+.resaux-sociaux {
+    display: flex;
+    justify-content: center;
+}
+
+.resaux-sociaux a {
+    position: relative;
+    margin: 0 50px;
+    font-size: 3rem;
+    height: 100px;
+    width: 100px;
+}
+
+.final {
+    color: #fff;
+    font-family: monospace;
+}
+
+/* -------------------formulaire inscription---------------- */
+
+
+:root {
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+}
+
+
+.container {
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.233);
+    width: 600px;
+}
+
+.form {
+    padding: 10px 20px;
+}
+
+.form h1{
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.form h2{
+    text-align: center;
+}
+
+.form-field {
+    margin-bottom: 5px;
+
+}
+
+.form-field label {
+    display: block;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.form-field input,
+.form-field select {
+    border: solid 2px #f0f0f0;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+    outline: none;
+}
+
+.form-field.error input {
+    border-color: var(--error-color);
+}
+
+.form-field.error select {
+    border: 2px solid var(--error-color);
+}
+
+.form-field.success input {
+    border-color: var(--success-color);
+}
+
+.form-field.success select {
+    border: 2px solid var(--success-color);
+}
+
+
+.form-field small {
+    color: var(--error-color);
+}
+
+i{
+    font-size: small;
+}
+
+/* button */
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.form-field.password {
+    position: relative;
+}
+
+.eye-icon {
+    position: relative;
+    left: 94%;
+    top: -40px;
+    cursor: pointer;
+}
+
+
+
+/* responsive exemple*/
+
+@media screen and (max-width: 520px) {
+    .contact {
+        padding: 0;
+    }
+    #signup{
+        width: 60%;
+        height: auto;
+    }
+    .footer {
+        padding: 0 60px 0 60px;
+    }
+
+    .resaux-sociaux a {
+        font-size: 1.5rem;
+    }
+}

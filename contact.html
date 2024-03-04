@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Code</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@700&family=Sarala&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fdcd3dea3e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+        <!-- Banner inserer video presentation avec texte-------- -->
+
+        <div class="block-banner">
+            <img class="banner-image" src="src/images2/Astroport.png" alt="horizon">
+        </div>
+    
+
+    <!-- -------------navbar ou autre- +meteo ou autres--- -->
+
+    <header>
+        <div class="block" id="navbar">
+            <nav class="level is-mobile ">
+
+                <p class="level-item has-text-centered">
+                    <a class="link is-info " href="index.html">Home</a>
+                </p>
+                <p class="level-item has-text-centered">
+                    <a class="link is-info" href="form.html">Reservations</a>
+                </p>
+                <p class="level-item has-text-centered">
+                    <a class="link is-info" href="contact.html">Contact</a>
+                </p>
+            </nav>
+
+        </div>
+    </header>
+
+   
+
+    <!--contact-->
+    <div class="block">
+        <div class="contact" id="contact">
+            <h1 class=" title heading-site is-1 ">Contactez-nous</h1>
+            <div class="footer-contact-form">
+                <form action="">
+                    <div class="field">
+                        <label class="label">Votre nom</label>
+                        <div class="control">
+                            <input class="input" id="name" type="text" placeholder="Florent" name="name" />
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Votre prénom</label>
+                        <div class="control">
+                            <input class="input" id="firstname" type="text" placeholder="Patrick" name="firstname" />
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Votre email</label>
+                        <div class="control">
+                            <input class="input" id="email" type="text" placeholder="coucou@cmoi.com" name="email" />
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Votre message</label>
+                        <div class="control">
+                            <textarea class="textarea" id="message" placeholder="C'est à toi de jouer"
+                                name="message"></textarea>
+                        </div>
+                    </div>
+                </form>
+                <button class="button is-link" id="send-email">Envoyez !</button>
+            </div>
+            
+        </div>
+        
+    </div>
+
+
+
+
+    <!-- -------footer -->
+
+    <footer >
+
+        <div class="content has-text-centered">
+            <div class="footer">
+                <div class="resaux-sociaux" id="resaux-sociaux">
+                    <a href="#" aria-label="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" aria-label="facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="github"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="final">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dignissimos nesciunt deserunt, dolorum quia reiciendis esse eius perspiciatis et aliquid veniam, velit dolor consequuntur aspernatur, ullam sed iusto reprehenderit repudiandae. Asperiores, voluptate eum.</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
